@@ -1,0 +1,81 @@
+Como Configurar o Git no VSCode para o GitHub
+Vamos dividir as etapas para facilitar:
+
+1. Criar um Repositório no GitHub:
+Acesse o GitHub e faça login na sua conta.
+
+Clique no botão verde “New” para criar um novo repositório.
+
+Dê um nome ao seu repositório, adicione uma descrição se quiser, e escolha se será público ou privado.
+
+Clique em "Create repository".
+
+2. Instalar o Git no VSCode:
+Para garantir que o Git esteja instalado no seu VSCode, vá para o terminal do VSCode e digite git --version. Se o Git não estiver instalado, você verá instruções de instalação.
+
+Caso precise instalar, siga as instruções em Git Downloads.
+
+3. Escolher Git Bash no Terminal do VSCode:
+Abra o VSCode.
+
+Vá até o menu de "Terminal" e selecione "New Terminal".
+
+No canto superior direito do terminal, clique no ícone de terminal de seleção e escolha "Git Bash".
+
+4. Configurar Usuário e E-mail no Git:
+sh
+git config --global user.email "seuemail@exemplo.com"
+git config --global user.name "seuNomeNoGitHub"
+Verifique se os valores estão corretos:
+
+sh
+git config user.name
+git config user.email
+5. Inicializar o Repositório Git:
+sh
+git init
+6. Conectar ao Repositório Remoto no GitHub:
+sh
+git remote add origin https://github.com/tassianasc/nomedorepositorio.git
+7. Adicionar Arquivos ao Repositório:
+sh
+git add .
+O comando git add . adiciona todos os arquivos e mudanças no diretório atual ao estágio para serem commitados.
+
+8. Realizar um Commit:
+sh
+git commit -m "Primeira versão"
+O comando git commit -m "mensagem" cria um ponto de salvamento no histórico do Git, com a mensagem fornecida explicando as mudanças.
+
+9. Renomear a Branch Principal:
+sh
+git branch -M main
+Esse comando renomeia a branch principal para "main", que é a convenção atual.
+
+10. Enviar para o Repositório Remoto:
+sh
+git push -u origin main
+Este comando empurra (envia) suas mudanças para o repositório remoto no GitHub.
+
+11. Autorização e Login:
+Se solicitado, faça login no GitHub e autorize o Git a usar sua conta.
+
+Adicionando Mudanças Posteriormente
+Quando você fizer mudanças no código e quiser atualizá-las no GitHub:
+
+Verificar o status dos arquivos:
+
+sh
+git status
+Adicionar apenas os arquivos modificados:
+
+sh
+git add nome_do_arquivo
+Comitar as mudanças:
+
+sh
+git commit -m "Descrição das mudanças"
+Enviar para o GitHub:
+
+sh
+git push
