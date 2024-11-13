@@ -67,16 +67,16 @@ Este guia abrange os passos necessários para:
    ```sh
    git --version
 Se não estiver instalado, siga as instruções no site do Git.
-3. Escolher Git Bash no Terminal do VSCode
-Abra o VSCode.
-No menu superior, selecione "Terminal" > "New Terminal".
-No terminal aberto, clique no ícone de seleção de terminal e escolha "Git Bash".
-Inicialização do Repositório
-4. Configurar Usuário e E-mail
+## **3. Escolher Git Bash no Terminal do VSCode**
+Abra o **VSCode.**
+No menu superior, selecione **"Terminal"** > **"New Terminal".**
+No terminal aberto, clique no ícone de seleção de terminal e escolha **"Git Bash".**
+
+## **Inicialização do Repositório**
+**4. Configurar Usuário e E-mail**
 Configure seu usuário e e-mail no Git:
 
-sh
-Copiar código
+```sh
 git config --global user.email "seuemail@exemplo.com"
 git config --global user.name "seuNomeNoGitHub"
 Verifique se as configurações estão corretas:
