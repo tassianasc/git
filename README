@@ -1,53 +1,72 @@
-Configurando o Git no VSCode para GitHub
-Bem-vindo ao guia de configuração do Git no VSCode para integração com o GitHub. Siga estas etapas para criar e gerenciar repositórios no GitHub diretamente do VSCode.
+# **Configurando o Git no VSCode para GitHub**
 
-Sumário
-Visão Geral
-Requisitos
-Configuração do Ambiente
-Criar um Repositório no GitHub
-Instalar e Configurar o Git no VSCode
-Escolher Git Bash no Terminal do VSCode
-Inicialização do Repositório
-Configurar Usuário e E-mail
-Inicializar o Repositório Git
-Enviando o Código para o GitHub
-Conectar ao Repositório Remoto
-Adicionar Arquivos ao Repositório
-Realizar um Commit
-Renomear a Branch Principal
-Enviar para o Repositório Remoto
-Adicionando Mudanças Posteriormente
-Verificar o status dos arquivos
-Adicionar apenas os arquivos modificados
-Realizar um Commit das Mudanças
-Enviar as Mudanças para o GitHub
-Notas Finais
-Visão Geral
+Bem-vindo ao guia de **configuração do Git no VSCode** para integração com o **GitHub**. Siga estas etapas para criar e gerenciar repositórios no GitHub diretamente do VSCode.
+
+---
+
+## **Sumário**
+
+1. [Visão Geral](#visão-geral)
+2. [Requisitos](#requisitos)
+3. [Configuração do Ambiente](#configuração-do-ambiente)
+   - [Criar um Repositório no GitHub](#1-criar-um-repositório-no-github)
+   - [Instalar e Configurar o Git no VSCode](#2-instalar-e-configurar-o-git-no-vscode)
+   - [Escolher Git Bash no Terminal do VSCode](#3-escolher-git-bash-no-terminal-do-vscode)
+4. [Inicialização do Repositório](#inicialização-do-repositório)
+   - [Configurar Usuário e E-mail](#4-configurar-usuário-e-email)
+   - [Inicializar o Repositório Git](#5-inicializar-o-repositório-git)
+5. [Enviando o Código para o GitHub](#enviando-o-código-para-o-github)
+   - [Conectar ao Repositório Remoto](#6-conectar-ao-repositório-remoto)
+   - [Adicionar Arquivos ao Repositório](#7-adicionar-arquivos-ao-repositório)
+   - [Realizar um Commit](#8-realizar-um-commit)
+   - [Renomear a Branch Principal](#9-renomear-a-branch-principal)
+   - [Enviar para o Repositório Remoto](#10-enviar-para-o-repositório-remoto)
+6. [Adicionando Mudanças Posteriormente](#adicionando-mudanças-posteriormente)
+   - [Verificar o status dos arquivos](#verificar-o-status-dos-arquivos)
+   - [Adicionar apenas os arquivos modificados](#adicionar-apenas-os-arquivos-modificados)
+   - [Realizar um Commit das Mudanças](#realizar-um-commit-das-mudanças)
+   - [Enviar as Mudanças para o GitHub](#enviar-as-mudanças-para-o-github)
+7. [Notas Finais](#notas-finais)
+
+---
+
+## **Visão Geral**
+
 Este guia abrange os passos necessários para:
 
-Criar um repositório no GitHub.
-Configurar o Git no VSCode.
-Usar o Git Bash no terminal do VSCode.
-Executar comandos Git para inicializar, adicionar, commitar e enviar código para o GitHub.
-Requisitos
-VSCode
-Git
-Conta no GitHub
-Configuração do Ambiente
-1. Criar um Repositório no GitHub
-Acesse o GitHub e faça login.
-Clique no botão "New" para criar um novo repositório.
-Dê um nome ao repositório, adicione uma descrição (opcional) e defina se será público ou privado.
-Clique em "Create repository".
-2. Instalar e Configurar o Git no VSCode
-Verifique se o Git está instalado:
+- Criar um repositório no **GitHub**.
+- Configurar o **Git** no **VSCode**.
+- Usar o **Git Bash** no terminal do VSCode.
+- Executar comandos **Git** para inicializar, adicionar, commitar e enviar código para o **GitHub**.
 
-sh
-Copiar código
-git --version
+---
+
+## **Requisitos**
+
+- **VSCode**
+- **Git**
+- **Conta no GitHub**
+
+---
+
+## **Configuração do Ambiente**
+
+### **1. Criar um Repositório no GitHub**
+
+1. Acesse o **GitHub** e faça login.
+2. Clique no botão **"New"** para criar um novo repositório.
+3. Dê um nome ao repositório, adicione uma descrição (opcional) e defina se será **público** ou **privado**.
+4. Clique em **"Create repository"**.
+
+---
+
+### **2. Instalar e Configurar o Git no VSCode**
+
+1. Verifique se o **Git** está instalado:
+
+   ```sh
+   git --version
 Se não estiver instalado, siga as instruções no site do Git.
-
 3. Escolher Git Bash no Terminal do VSCode
 Abra o VSCode.
 No menu superior, selecione "Terminal" > "New Terminal".
