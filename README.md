@@ -79,7 +79,7 @@ Configure seu usuário e e-mail no Git:
 ```sh
 git config --global user.email "seuemail@exemplo.com"
 git config --global user.name "seuNomeNoGitHub"
-
+```sh
 Verifique se as configurações estão corretas:
 
 sh
