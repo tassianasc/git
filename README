@@ -1,133 +1,143 @@
-README - Configurando o Git no VSCode para GitHub
+Configurando o Git no VSCode para GitHub
 Bem-vindo ao guia de configuração do Git no VSCode para integração com o GitHub. Siga estas etapas para criar e gerenciar repositórios no GitHub diretamente do VSCode.
 
 Sumário
 Visão Geral
-
 Requisitos
-
 Configuração do Ambiente
-
+Criar um Repositório no GitHub
+Instalar e Configurar o Git no VSCode
+Escolher Git Bash no Terminal do VSCode
 Inicialização do Repositório
-
+Configurar Usuário e E-mail
+Inicializar o Repositório Git
 Enviando o Código para o GitHub
-
+Conectar ao Repositório Remoto
+Adicionar Arquivos ao Repositório
+Realizar um Commit
+Renomear a Branch Principal
+Enviar para o Repositório Remoto
 Adicionando Mudanças Posteriormente
-
+Verificar o status dos arquivos
+Adicionar apenas os arquivos modificados
+Realizar um Commit das Mudanças
+Enviar as Mudanças para o GitHub
 Notas Finais
-
 Visão Geral
 Este guia abrange os passos necessários para:
 
 Criar um repositório no GitHub.
-
 Configurar o Git no VSCode.
-
 Usar o Git Bash no terminal do VSCode.
-
 Executar comandos Git para inicializar, adicionar, commitar e enviar código para o GitHub.
-
 Requisitos
 VSCode
-
 Git
-
 Conta no GitHub
-
 Configuração do Ambiente
 1. Criar um Repositório no GitHub
 Acesse o GitHub e faça login.
-
 Clique no botão "New" para criar um novo repositório.
-
-Dê um nome ao repositório, adicione uma descrição se quiser, e defina se será público ou privado.
-
+Dê um nome ao repositório, adicione uma descrição (opcional) e defina se será público ou privado.
 Clique em "Create repository".
-
 2. Instalar e Configurar o Git no VSCode
-Verifique a instalação do Git no VSCode:
+Verifique se o Git está instalado:
 
 sh
+Copiar código
 git --version
 Se não estiver instalado, siga as instruções no site do Git.
 
 3. Escolher Git Bash no Terminal do VSCode
 Abra o VSCode.
-
 No menu superior, selecione "Terminal" > "New Terminal".
-
 No terminal aberto, clique no ícone de seleção de terminal e escolha "Git Bash".
-
 Inicialização do Repositório
 4. Configurar Usuário e E-mail
 Configure seu usuário e e-mail no Git:
 
 sh
+Copiar código
 git config --global user.email "seuemail@exemplo.com"
 git config --global user.name "seuNomeNoGitHub"
 Verifique se as configurações estão corretas:
 
 sh
+Copiar código
 git config user.name
 git config user.email
 5. Inicializar o Repositório Git
-Dentro da pasta do projeto, inicialize o repositório:
+Dentro da pasta do seu projeto, inicialize o repositório:
 
 sh
+Copiar código
 git init
 Enviando o Código para o GitHub
 6. Conectar ao Repositório Remoto
-Adicione o repositório remoto:
+Adicione o repositório remoto do GitHub:
 
 sh
+Copiar código
 git remote add origin https://github.com/seuUsuario/seuRepositorio.git
 7. Adicionar Arquivos ao Repositório
-Adicione os arquivos ao estágio:
+Adicione os arquivos ao estágio de commit:
 
 sh
+Copiar código
 git add .
-git add . adiciona todos os arquivos e alterações no diretório atual ao estágio para commit.
+Dica: O comando git add . adiciona todos os arquivos e alterações no diretório atual ao estágio para commit.
 
 8. Realizar um Commit
-Faça um commit das alterações:
+Realize o commit das alterações:
 
 sh
+Copiar código
 git commit -m "Primeira versão"
-git commit -m "mensagem" cria um ponto de salvamento no histórico do Git, com a mensagem explicando as mudanças.
+Nota: git commit -m "mensagem" cria um ponto de salvamento no histórico do Git, com a mensagem explicando as mudanças.
 
 9. Renomear a Branch Principal
 Renomeie a branch principal para "main":
 
 sh
+Copiar código
 git branch -M main
 10. Enviar para o Repositório Remoto
 Envie suas mudanças para o GitHub:
 
 sh
+Copiar código
 git push -u origin main
-11. Autorização e Login
-Se solicitado, faça login no GitHub e autorize o Git a usar sua conta.
+Autorização: Se solicitado, faça login no GitHub e autorize o Git a usar sua conta.
 
 Adicionando Mudanças Posteriormente
 Verificar o status dos arquivos
 Para ver quais arquivos foram modificados:
 
 sh
+Copiar código
 git status
 Adicionar apenas os arquivos modificados
 Adicione os arquivos modificados:
 
 sh
+Copiar código
 git add nome_do_arquivo
 Realizar um Commit das Mudanças
 Comite as mudanças:
 
 sh
+Copiar código
 git commit -m "Descrição das mudanças"
 Enviar as Mudanças para o GitHub
 Envie as mudanças:
 
 sh
+Copiar código
 git push
 Notas Finais
-Este guia cobre as etapas essenciais para configurar e usar o Git no VSCode com o GitHub. Certifique-se de manter suas credenciais seguras e de revisar suas configurações de usuário antes de iniciar o uso do Git. Se precisar de mais ajuda, consulte a documentação do Git e do VSCode.
+Este guia cobre as etapas essenciais para configurar e usar o Git no VSCode com o GitHub. Certifique-se de manter suas credenciais seguras e de revisar suas configurações de usuário antes de iniciar o uso do Git.
+
+Se precisar de mais ajuda, consulte a documentação do Git e do VSCode:
+
+Documentação do Git
+Documentação do VSCode
