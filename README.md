@@ -76,10 +76,9 @@ No terminal aberto, clique no ícone de seleção de terminal e escolha **"Git B
 **4. Configurar Usuário e E-mail**
 Configure seu usuário e e-mail no Git:
 
-```sh
-git config --global user.email "seuemail@exemplo.com"
-git config --global user.name "seuNomeNoGitHub"
-```sh
+   ```sh
+   git config --global user.email "seuemail@exemplo.com"
+   git config --global user.name "seuNomeNoGitHub"
 Verifique se as configurações estão corretas:
 
 sh
