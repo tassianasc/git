@@ -64,44 +64,45 @@ Este guia abrange os passos necessários para:
 
 1. Verifique se o **Git** está instalado:
 
-   ```sh
+   ```bash
    git --version
 Se não estiver instalado, siga as instruções no site do Git.
-## **3. Escolher Git Bash no Terminal do VSCode**
-Abra o **VSCode.**
-No menu superior, selecione **"Terminal"** > **"New Terminal".**
-No terminal aberto, clique no ícone de seleção de terminal e escolha **"Git Bash".**
 
-## **Inicialização do Repositório**
-**4. Configurar Usuário e E-mail**
+3. Escolher Git Bash no Terminal do VSCode
+Abra o VSCode.
+No menu superior, selecione "Terminal" > "New Terminal".
+No terminal aberto, clique no ícone de seleção de terminal e escolha "Git Bash".
+Inicialização do Repositório
+4. Configurar Usuário e E-mail
 Configure seu usuário e e-mail no Git:
 
-   ```sh
-   git config --global user.email "seuemail@exemplo.com"
-   git config --global user.name "seuNomeNoGitHub"
+bash
+Copiar código
+git config --global user.email "seuemail@exemplo.com"
+git config --global user.name "seuNomeNoGitHub"
 Verifique se as configurações estão corretas:
 
-sh
+bash
 Copiar código
 git config user.name
 git config user.email
 5. Inicializar o Repositório Git
 Dentro da pasta do seu projeto, inicialize o repositório:
 
-sh
+bash
 Copiar código
 git init
 Enviando o Código para o GitHub
 6. Conectar ao Repositório Remoto
 Adicione o repositório remoto do GitHub:
 
-sh
+bash
 Copiar código
 git remote add origin https://github.com/seuUsuario/seuRepositorio.git
 7. Adicionar Arquivos ao Repositório
 Adicione os arquivos ao estágio de commit:
 
-sh
+bash
 Copiar código
 git add .
 Dica: O comando git add . adiciona todos os arquivos e alterações no diretório atual ao estágio para commit.
@@ -109,7 +110,7 @@ Dica: O comando git add . adiciona todos os arquivos e alterações no diretóri
 8. Realizar um Commit
 Realize o commit das alterações:
 
-sh
+bash
 Copiar código
 git commit -m "Primeira versão"
 Nota: git commit -m "mensagem" cria um ponto de salvamento no histórico do Git, com a mensagem explicando as mudanças.
@@ -117,13 +118,13 @@ Nota: git commit -m "mensagem" cria um ponto de salvamento no histórico do Git,
 9. Renomear a Branch Principal
 Renomeie a branch principal para "main":
 
-sh
+bash
 Copiar código
 git branch -M main
 10. Enviar para o Repositório Remoto
 Envie suas mudanças para o GitHub:
 
-sh
+bash
 Copiar código
 git push -u origin main
 Autorização: Se solicitado, faça login no GitHub e autorize o Git a usar sua conta.
@@ -132,25 +133,25 @@ Adicionando Mudanças Posteriormente
 Verificar o status dos arquivos
 Para ver quais arquivos foram modificados:
 
-sh
+bash
 Copiar código
 git status
 Adicionar apenas os arquivos modificados
 Adicione os arquivos modificados:
 
-sh
+bash
 Copiar código
 git add nome_do_arquivo
 Realizar um Commit das Mudanças
 Comite as mudanças:
 
-sh
+bash
 Copiar código
 git commit -m "Descrição das mudanças"
 Enviar as Mudanças para o GitHub
 Envie as mudanças:
 
-sh
+bash
 Copiar código
 git push
 Notas Finais
@@ -160,3 +161,5 @@ Se precisar de mais ajuda, consulte a documentação do Git e do VSCode:
 
 Documentação do Git
 Documentação do VSCode
+csharp
+Copiar código
